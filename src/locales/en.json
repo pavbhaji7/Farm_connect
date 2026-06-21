@@ -1,0 +1,21 @@
+{
+  "nav.home": "Home",
+  "nav.shop": "Shop",
+  "nav.about": "About Us",
+  "nav.contact": "Contact",
+  "nav.login": "Login",
+  "hero.title": "Pure Like Mom's Love",
+  "hero.subtitle": "There is always no substitute for moms love and food, but I found one which is no where lesser than mom's food... None other than Farm Connect foods.",
+  "hero.shopNow": "Shop Now",
+  "hero.learnMore": "Learn More",
+  "footer.quickLinks": "Quick Links",
+  "footer.shopAll": "Shop All",
+  "footer.categories": "Categories",
+  "footer.contact": "Contact",
+  "feedback.title": "We'd Love Your Feedback",
+  "feedback.subtitle": "Got a question or suggestion? Reach out to us directly!",
+  "feedback.email": "Email us at: farmconnect@gmail.com",
+  "feedback.phone": "Call us: +(91) 97895-58225",
+  "feedback.placeholder": "Write your feedback here...",
+  "feedback.submit": "Submit Feedback"
+}

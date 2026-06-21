@@ -1,0 +1,21 @@
+{
+  "nav.home": "होम",
+  "nav.shop": "दुकान",
+  "nav.about": "हमारे बारे में",
+  "nav.contact": "संपर्क करें",
+  "nav.login": "लॉग इन",
+  "hero.title": "माँ के प्यार की तरह शुद्ध",
+  "hero.subtitle": "माँ के प्यार और भोजन का कोई विकल्प नहीं है, लेकिन मुझे एक ऐसा विकल्प मिला जो माँ के भोजन से कम नहीं है... वह है फार्म कनेक्ट फूड्स।",
+  "hero.shopNow": "अभी खरीदारी करें",
+  "hero.learnMore": "और जानें",
+  "footer.quickLinks": "त्वरित लिंक",
+  "footer.shopAll": "सभी खरीदारी करें",
+  "footer.categories": "श्रेणियां",
+  "footer.contact": "संपर्क",
+  "feedback.title": "हमें आपकी प्रतिक्रिया अच्छी लगेगी",
+  "feedback.subtitle": "कोई प्रश्न या सुझाव है? हमसे सीधे संपर्क करें!",
+  "feedback.email": "हमें ईमेल करें: farmconnect@gmail.com",
+  "feedback.phone": "हमें कॉल करें: +(91) 97895-58225",
+  "feedback.placeholder": "अपनी प्रतिक्रिया यहाँ लिखें...",
+  "feedback.submit": "प्रतिक्रिया जमा करें"
+}

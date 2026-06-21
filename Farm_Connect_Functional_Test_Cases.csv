@@ -1,0 +1,38 @@
+"Test Case ID","Version","Feature","Test Case","Preconditions","Steps to Execute Test Case","Test Data","Expected Output","Actual Output","Status","Bug ID","Bug Title","Screenshot","Root Cause (Issue Description)","Resolution","Retest Status","Remarks"
+"TC_001","V1.0","User Authentication - Registration","Register new user with valid data","System is running; registration page is accessible; MongoDB is connected","1. Navigate to /register page
+2. Enter valid Name, Email, and Password
+3. Click 'Sign Up'","Name: Test User
+Email: test@example.com
+Password: SecurePass123","Account created successfully; user redirected to login page; password securely hashed in DB","Account created successfully; redirected to login; hash verified in DB","Pass","","","","","","",""
+"TC_002","V1.0","User Authentication - Registration","Register with already-registered email","User with email already exists in MongoDB","1. Navigate to /register
+2. Enter an already-registered email address
+3. Fill remaining fields
+4. Click 'Sign Up'","Email: test@example.com (already registered)","System displays error message: 'Email is already registered'. Registration blocked.","Error message displayed; duplicate registration prevented","Pass","","","","","","","Duplicate prevention working"
+"TC_003","V1.0","User Authentication - Login","Login with valid registered credentials","User account registered in the system","1. Navigate to /login page
+2. Enter valid registered email
+3. Enter correct password
+4. Click 'Login'","Email: test@example.com
+Password: SecurePass123","User is authenticated successfully; redirected to Shop page","User authenticated successfully; redirected to Shop page","Pass","","","","","","","Authentication working correctly"
+"TC_004","V1.0","User Authentication - Login","Login with invalid password","User account exists in system","1. Navigate to /login page
+2. Enter valid registered email
+3. Enter INCORRECT password
+4. Click 'Login'","Email: test@example.com
+Password: WrongPassword","System displays error message: 'Invalid email or password'. User remains on login page.","Error message displayed correctly; login rejected","Pass","","","","","","","Security boundary verified"
+"TC_005","V1.0","Shopping Cart","Add product to cart from Shop page","User is on Shop page; Products are loaded","1. Navigate to /shop
+2. Click 'Add to Cart' on 'Organic Fresh Farm Basket'
+3. Observe cart counter in header","Product: Organic Fresh Farm Basket","Cart counter in header increments by 1; Product is added to LocalStorage cart state","Cart counter updated to 1; item added to local storage state","Pass","","","","","","",""
+"TC_006","V1.0","Shopping Cart","View cart and verify total","Cart has at least one item","1. Click the Cart icon in the header
+2. Review items and total price","Cart items: 1x Organic Fresh Farm Basket (₹500)","Cart page displays the item with quantity 1; Total is correctly calculated as ₹500.00","Cart page displays item; total calculated correctly","Pass","","","","","","",""
+"TC_007","V1.0","Shopping Cart","Remove product from cart","Cart has at least one item","1. Navigate to /cart
+2. Click 'Remove' next to the product
+3. Observe cart state","Product ID: 1","Product is removed from cart; Total is recalculated; 'Your cart is empty' message displayed if no items remain","Product removed; cart empty message displayed","Pass","","","","","","",""
+"TC_008","V1.0","Category Navigation","Navigate to dynamic category page with placeholders","Shop page is accessible","1. Navigate to /shop
+2. Click on 'Healthy Breakfast' category
+3. Observe products displayed","Category: Healthy Breakfast","User redirected to /category/breakfast; Page displays 3 placeholder sample products with default images","Redirected correctly; 3 sample products displayed with placeholder images","Pass","","","","","","","Fallback logic verified"
+"TC_009","V1.0","Multilingual Support","Switch language to Tamil","Language switcher is available in footer","1. Scroll to footer Quick Links
+2. Select 'தமிழ் (Tamil)' from language dropdown
+3. Scroll up and observe text","Language Selection: Tamil","Header nav links, Hero text, and Feedback area translate to Tamil. LocalStorage saves preference.","Text translated to Tamil immediately; preference saved in LocalStorage","Pass","","","","","","","Context state updating perfectly"
+"TC_010","V1.0","Feedback Area","Submit feedback via form","Feedback area rendered on Home page","1. Navigate to Home page
+2. Scroll to Feedback Area
+3. Enter text in feedback textarea
+4. Click 'Submit Feedback'","Feedback: 'Great application!'","Form submission triggers (UI handles submit). Required validation prevents empty submission.","Required validation works; UI handles click","Pass","","","","","","",""
